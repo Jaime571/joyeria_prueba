@@ -23,13 +23,13 @@
                         <a class="nav-link active" href="#">Clientes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="providers.php">Proveedores</a>
+                        <a class="nav-link" href="src/providers.php">Proveedores</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="ventas.php">Ventas</a>
+                        <a class="nav-link" href="src/ventas.php">Ventas</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos.php">Productos</a>
+                        <a class="nav-link" href="src/productos.php">Productos</a>
                     </li>
                     <li class="nav-item">
                         <a class="btn btn-success" href="#" data-bs-toggle="modal" data-bs-target="#modalNewCli">
@@ -64,7 +64,7 @@
 
         echo "Ruta actual: " . __DIR__ . "\n";
         echo "Ruta objetivo: " . __DIR__ . '/src/config/db_connection.php' . "\n";
-        echo "¿Existe el archivo? " . (file_exists(__DIR__ . '/../src/config/db_connection.php') ? 'Sí' : 'No');
+        echo "¿Existe el archivo? " . (file_exists(__DIR__ . '/src/config/db_connection.php') ? 'Sí' : 'No');
 
         include_once __DIR__ . '/src/config/db_connection.php';
         include_once  __DIR__ .  '/src/config/queries.php';
