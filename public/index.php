@@ -66,8 +66,8 @@
         echo "Ruta objetivo: " . __DIR__ . '/src/config/db_connection.php' . "\n";
         echo "¿Existe el archivo? " . (file_exists(__DIR__ . '/src/config/db_connection.php') ? 'Sí' : 'No');
 
-        include_once __DIR__ . '/src/config/db_connection.php';
-        include_once  __DIR__ .  '/src/config/queries.php';
+        include_once __DIR__ . '/../src/config/db_connection.php';
+        include_once __DIR__ . '/../src/config/queries.php';
 
         // Preparar la consulta
         $clientes = $db->prepare($getAllClients);
