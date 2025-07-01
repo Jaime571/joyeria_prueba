@@ -1,6 +1,6 @@
 <?php
 
-require './db/db_connection.php';
+require 'src/config/db_connection.php';
 require 'specFuncs.php';
 
 $nombre = $_POST['nombre'];

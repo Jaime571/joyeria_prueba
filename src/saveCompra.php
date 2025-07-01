@@ -1,6 +1,6 @@
 <?php
 
-require './db/db_connection.php'; // Asegúrate de que esta ruta sea correcta
+require 'src/config/db_connection.php'; // Asegúrate de que esta ruta sea correcta
 require 'specFuncs.php'; // Asegúrate de incluir las funciones necesarias
 
 // Verificar si todas las variables POST esperadas están definidas

@@ -107,10 +107,10 @@
             <?php } ?>
 
         </div>
-        <?php include 'modalEditClient.php'; ?>
-        <?php include 'modalNewClient.php'; ?>
-        <?php include 'modalEliminarCliente.php'; ?>
-        <?php include 'modalBackUp.php'; ?>
+        <?php include 'src/modalEditClient.php'; ?>
+        <?php include 'src/modalNewClient.php'; ?>
+        <?php include 'src/modalEliminarCliente.php'; ?>
+        <?php include 'src/modalBackUp.php'; ?>
         <script>
             let editaModal = document.getElementById('modalEditClient');
             let eliminaModal = document.getElementById('modalEliminarCliente');
@@ -128,7 +128,7 @@
                 let inputTelefono = editaModal.querySelector('.modal-body #telefono')
                 let inputEmail = editaModal.querySelector('.modal-body #correo')
 
-                let url = "getCliente.php"
+                let url = "src/getCliente.php"
                 let formData = new FormData()
                 formData.append('id', id)
 
@@ -140,10 +140,10 @@
 
                         inputId.value = id
                         inputNombre.value = data.nombre,
-                            inputAPaterno.value = data.a_paterno,
-                            inputAMaterno.value = data.a_materno,
-                            inputTelefono.value = data.telefono,
-                            inputEmail.value = data.correo
+                        inputAPaterno.value = data.a_paterno,
+                        inputAMaterno.value = data.a_materno,
+                        inputTelefono.value = data.telefono,
+                        inputEmail.value = data.correo
 
                     }).catch(err => console.log(err))
             })

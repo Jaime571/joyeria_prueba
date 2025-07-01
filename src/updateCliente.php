@@ -1,5 +1,5 @@
 <?php
-require './db/db_connection.php';
+require 'src/config/db_connection.php';
 require 'specFuncs.php';
 
 $id = $_POST['id'];
@@ -14,7 +14,7 @@ $sql = "UPDATE clientes SET nombre = '$nombre', a_paterno = '$a_paterno', a_mate
 try {
     $consulta = $db->prepare($sql);
     $consulta->execute();
-    header('Location: index.php');
+    header('Location: public/index.php');
 } catch (PDOException $e) {
     echo $id;
     echo "Error al insertar en la base de datos: " . $e->getMessage();

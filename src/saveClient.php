@@ -1,6 +1,6 @@
 <?php
 
-require './db/db_connection.php';
+require 'src/config/db_connection.php';
 require 'specFuncs.php';
 
 $nombre = $_POST['nombre'];
@@ -22,6 +22,6 @@ try {
     echo "Error al insertar en la base de datos: " . $e->getMessage();
 }
 
-header('Location: index.php');
+header('Location: public/index.php');
 
 ?>

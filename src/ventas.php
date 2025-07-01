@@ -74,8 +74,8 @@
         </div>
     </div>
     <?php
-    include './db/db_connection.php';
-    include './db/queries.php';
+    include 'src/config/db_connection.php';
+    include 'src/config/queries.php';
 
     $queryClients = $db->prepare($getAllClients);
     $queryClients->execute();

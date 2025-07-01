@@ -54,8 +54,8 @@
         <hr>
         <!-- Deck de cartas de los clientes -->
         <?php
-        include_once './db/db_connection.php';
-        include_once './db/queries.php';
+        include_once 'src/config/db_connection.php';
+        include_once 'src/config/queries.php';
 
         // Preparar la consulta
         $productos = $db->prepare($getAllProviders);

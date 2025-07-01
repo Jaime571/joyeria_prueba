@@ -20,7 +20,7 @@
                 <!-- <div class="collapse navbar-collapse" id="navbarNav"> -->
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Clientes</a>
+                        <a class="nav-link" href="/public/index.php">Clientes</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="providers.php">Proveedores</a>
@@ -54,8 +54,8 @@
         <hr>
         <!-- Deck de cartas de los clientes -->
         <?php
-        include_once './db/db_connection.php';
-        include_once './db/queries.php';
+        include_once 'src/config/db_connection.php';
+        include_once 'src/config/queries.php';
 
         // Preparar la consulta
         $productos = $db->prepare($getAllProducts);
