@@ -1,8 +1,8 @@
 <?php
 // Cargar phpdotenv manualmente (ajusta la ruta según tu estructura)
-require __DIR__ . '/src/vendor/phpdotenv-master/src/Dotenv.php';
-require __DIR__ . '/src/vendor/phpdotenv-master/src/Loader.php';
-require __DIR__ . '/src/vendor/phpdotenv-master/src/Validator.php';
+require __DIR__ . '/../../vendor/phpdotenv-master/src/Dotenv.php';
+require __DIR__ . '/../../vendor/phpdotenv-master/src/Loader.php';
+require __DIR__ . '/../../vendor/phpdotenv-master/src/Validator.php';
 
 // Cargar las variables del archivo .env
 $dotenv = Dotenv\Dotenv::createImmutable(__DIR__);
