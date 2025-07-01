@@ -63,7 +63,7 @@
         <?php
 
         echo "Ruta actual: " . __DIR__ . "\n";
-        echo "Ruta objetivo: " . __DIR__ . '/../src/config/db_connection.php' . "\n";
+        echo "Ruta objetivo: " . __DIR__ . 'src/config/db_connection.php' . "\n";
         echo "¿Existe el archivo? " . (file_exists(__DIR__ . '/../src/config/db_connection.php') ? 'Sí' : 'No');
 
         include_once __DIR__ . '/src/config/db_connection.php';
